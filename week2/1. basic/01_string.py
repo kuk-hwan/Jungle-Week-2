@@ -24,7 +24,10 @@
 - 문자열을 뒤집어서 비교하거나, 양 끝에서 시작해 중앙으로 이동하며 비교하세요
 """
 
-def is_palindrome(s):
+def is_palindrome(s: str) -> bool:
+    filtered = "".join(c.lower() for c in s if c.isalnum())
+    return filtered == filtered[::-1]
+
     """
     문자열이 회문인지 판별하는 함수
     

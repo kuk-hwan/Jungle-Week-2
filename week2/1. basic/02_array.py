@@ -32,6 +32,18 @@
 """
 
 def rotate_matrix_90(matrix):
+
+    arr = []
+    n = 3
+
+    new90 = [[0] * n for _ in range(n)]
+
+    for i in range(n):
+        for j in range(n):
+            new90[j][n-i-1] = arr[i][j]
+
+            print(new90)
+    
     """
     2차원 배열을 시계방향으로 90도 회전
     
