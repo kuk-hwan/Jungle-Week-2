@@ -71,6 +71,7 @@ def quick_sort_helper(arr, low, high):
         pivot_index = partition(arr, low, high)
 
         quick_sort_helper(arr, low, pivot_index - 1)
+
         quick_sort_helper(arr, pivot_index + 1, high)
 
 def quick_sort(arr):
