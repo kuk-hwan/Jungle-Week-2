@@ -85,8 +85,6 @@ def fibonacci_memo(n, memo=None):
         memo = {}
 
     # TODO: base case 
-    if n in memo:
-        return memo[n]
     if n == 0:
         return 0
     if n == 1:
